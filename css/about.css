@@ -1,0 +1,199 @@
+@charset "utf-8";
+*, ::before, ::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+img   {
+	vertical-align: top;
+	max-width: 100%;
+	height: auto;
+}
+body{
+    background-color: #F0F0F0;
+}
+body a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    /*position: fixed;*/
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+h1 img{
+  width: 40px;
+  height: auto;
+  padding: 5px 0;
+}
+a,a:hover,a:visited{
+    color: inherit;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+nav li{
+    padding: 0 30px;
+}
+.sec1{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.sec1 img{
+    width: 320px;
+    height: 320px;
+}
+.sec2{
+    position:relative;
+}
+.intro{
+    max-width: 400px;
+    height: auto;
+    padding: 10px 0 0 112px;
+    text-align: left;
+}
+.box img{
+    width: 320px;
+    height: 320px;
+    padding-bottom: 20px;
+}
+.text{
+    width: 280px;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+.tools{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.text-center{
+  text-align: center;
+}
+.text-center p{
+  padding: 8px;
+}
+.text-center:nth-child(1) {
+    font-size: 50px;
+}
+.box{
+    padding: 0 50px;
+    margin-top: 50px;
+
+}
+.box:nth-child(-n+3){
+    margin-top: 150px;
+}
+.sec2 h2{
+    position: absolute;
+    top: 10px;
+    left: 87px;
+    font-size: 50px;
+
+}
+.text p:nth-child(2){
+    text-align: left;
+    padding-top: 10px;
+}
+.yaji{
+    position: absolute;
+    left: 46px;
+    bottom: -28px;
+    /*矢印のアニメーション*/
+    display  : inline-block;
+  animation: sample2Anime 5s alternate infinite; /* アニメーション指定 */
+}
+@keyframes sample2Anime{
+   0% { transform: scale(1, 1);   }    /* 大きさ */
+ 100% { transform: scale(5, 0.5); }    /* 大きさ */
+}
+.sec3{
+    position: relative;
+    background-color:#000;
+    width: 100%;
+    height: 400px;
+    color:#F0F0F0;
+    border-radius: 3rem 3rem 0 0;
+    margin-top: 100px;
+}
+/*揺れるアニメーション*/
+.anim-box.poyoyon3 {
+  animation: poyoyon3 2.5s infinite;
+  opacity: 1;
+}
+@keyframes poyoyon3 {
+  0%, 40% {
+    transform: skew(0deg, 0deg);
+  }
+  5% {
+    transform: skew(5deg, 5deg);
+  }
+  10% {
+    transform: skew(-4deg, -4deg);
+  }
+  15% {
+    transform: skew(3deg, 3deg);
+  }
+  20% {
+    transform: skew(-2deg, -2deg);
+  }
+  25% {
+    transform: skew(1deg, 1deg);
+  }
+  30% {
+    transform: skew(-0.6deg, -0.6deg);
+  }
+  35% {
+    transform: skew(0.3deg, 0.3deg);
+  }
+}
+.anim-box.poyoyon3{
+    position: absolute;
+    bottom: 46px;
+    left: 250px;
+    font-size: 36px;
+    
+}
+footer{
+    background-color: #A4C1D7;
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+.contact{
+    position: absolute;
+    right: 73px;
+    bottom: 60px;
+    color: #fff;
+}
+.copyright{
+    text-align: center;
+    padding-top: 170px;
+}
+.contact p:nth-child(2){
+    border-top: solid 5px #fff;
+}
+@media(max-width:960px){
+  .sec1{
+    display: block;
+    text-align: center;
+    align-items: center;
+  }
+  .intro{
+    margin: 0 auto;
+    padding: 0;
+    max-width: 300px;
+    height: auto;
+  }
+
+}

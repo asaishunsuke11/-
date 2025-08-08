@@ -1,0 +1,172 @@
+@charset "utf-8";
+*, ::before, ::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+img   {
+	vertical-align: top;
+	max-width: 100%;
+	height: auto;
+}
+a{
+  text-decoration: none;
+}
+body{
+    background-color: #F0F0F0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    /*position: fixed;*/
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+h1 img{
+  width: 40px;
+  height: auto;
+  padding: 5px 0;
+}
+a,a:hover,a:visited{
+    color: inherit;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav ul a{
+    text-decoration: none;
+}
+nav li{
+    padding: 0 30px;
+}
+main{
+    margin: 0 150px;
+    font-size: 36px;
+}
+.name{
+    margin-top: 100px;
+    padding-bottom: 30px;
+}
+.small-text{
+    font-size: 16px;
+}
+.mainimage{
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+table th{
+    font-size: 16px;
+    font-weight: normal;
+    padding-bottom: 80px;
+    vertical-align: top;
+}
+table td{
+    font-size: 16px;
+    padding-bottom: 80px;
+    padding-left: 300px;
+}
+table{
+    text-align: left;
+    margin-top: 100px;
+}
+/*揺れるアニメーション*/
+.anim-box.poyoyon3 {
+  animation: poyoyon3 2.5s infinite;
+  opacity: 1;
+}
+@keyframes poyoyon3 {
+  0%, 40% {
+    transform: skew(0deg, 0deg);
+  }
+  5% {
+    transform: skew(5deg, 5deg);
+  }
+  10% {
+    transform: skew(-4deg, -4deg);
+  }
+  15% {
+    transform: skew(3deg, 3deg);
+  }
+  20% {
+    transform: skew(-2deg, -2deg);
+  }
+  25% {
+    transform: skew(1deg, 1deg);
+  }
+  30% {
+    transform: skew(-0.6deg, -0.6deg);
+  }
+  35% {
+    transform: skew(0.3deg, 0.3deg);
+  }
+}
+.text{
+    text-align: center;
+    padding-top: 10px;
+    line-height: 30px;
+}
+.text p:nth-child(n+2){
+    color: red;   
+}
+.text-flex{
+    display: flex;
+    padding: 0 30px;
+    justify-content: space-between;
+}
+.sec1 h2{
+    position: absolute;
+    left: 166px;
+    top: -23px;
+}
+.anim-box.poyoyon3{
+    position: absolute;
+    bottom: 46px;
+    left: 250px;
+    font-size: 36px;
+    
+}
+.yaji{
+    position: absolute;
+    left: 46px;
+    bottom: -28px;
+    /*矢印のアニメーション*/
+    display  : inline-block;
+  animation: sample2Anime 5s alternate infinite; /* アニメーション指定 */
+}
+@keyframes sample2Anime{
+   0% { transform: scale(1, 1);   }    /* 大きさ */
+ 100% { transform: scale(5, 0.5); }    /* 大きさ */
+}
+.sec2{
+    position: relative;
+    background-color:#000;
+    width: 100%;
+    height: 400px;
+    color:#F0F0F0;
+    border-radius: 3rem 3rem 0 0;
+}
+footer{
+    background-color: #A4C1D7;
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+.contact{
+    position: absolute;
+    right: 73px;
+    bottom: 60px;
+    color: #fff;
+}
+.copyright{
+    text-align: center;
+    padding-top: 170px;
+}
+.contact p:nth-child(2){
+    border-top: solid 5px #fff;
+}
